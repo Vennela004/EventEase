@@ -1,0 +1,196 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+.cover {
+  background: url(event\ management.jpg) center/cover no-repeat;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  background-color: #0077cc; 
+}
+
+.cover-content {
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.cover-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cover-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cover-content .cta-btn {
+  background: #ff9900;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+header {
+  background: #2d2d2d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #fff;
+  font-weight: 500;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+.cta-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background: #ff9900;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+}
+
+.about {
+  padding: 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.events {
+  padding: 2rem;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.event-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card a {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background: #0077cc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.testimonials {
+  padding: 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.testimonial {
+  background: #f3f3f3;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+}
+
+footer {
+  background: #2d2d2d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #2d2d2d;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav a {
+    padding: 1rem;
+    border-top: 1px solid #444;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .event-grid,
+  .testimonial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
